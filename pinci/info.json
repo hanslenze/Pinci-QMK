@@ -1,0 +1,90 @@
+{
+    "manufacturer": "Camrbuss",
+    "keyboard_name": "pinci",
+    "maintainer": "camrbuss",
+    "bootloader": "rp2040",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
+    },
+    "matrix_pins": {
+        "direct": [
+            ["GP4", "GP27", "GP3", "GP28", "GP2" ],
+            ["GP7", "GP22", "GP6", "GP26", "GP5" ],
+            ["GP13", "GP21", "GP12", "GP11", "GP10" ],
+            ["GP14", "GP15", "NO_PIN", "NO_PIN", "NO_PIN"]
+        ]
+    },
+    "processor": "RP2040",
+    "debounce": 10,
+    "url": "https://github.com/camrbuss/pinci",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0001",
+        "vid": "0x9997"
+    },
+    "split": {
+        "enabled": true,
+        "matrix_pins": {
+            "right": {
+                "direct": [
+                    ["GP2", "GP28", "GP3", "GP27", "GP4" ],
+                    ["GP5", "GP26", "GP6", "GP22", "GP7" ],
+                    ["GP10", "GP11", "GP12", "GP21", "GP13" ],
+                    ["GP15", "GP14","NO_PIN", "NO_PIN", "NO_PIN"]
+                ]
+            }
+        },
+    },
+    "layouts": {
+        "LAYOUT_split_3x5_2": {
+            "layout": [
+                {"x": 0, "y": 0.93},
+                {"x": 1, "y": 0.31},
+                {"x": 2, "y": 0},
+                {"x": 3, "y": 0.28},
+                {"x": 4, "y": 0.42},
+
+                {"x": 7, "y": 0.42},
+                {"x": 8, "y": 0.28},
+                {"x": 9, "y": 0},
+                {"x": 10, "y": 0.31},
+                {"x": 11, "y": 0.93},
+
+                {"x": 0, "y": 1.93},
+                {"x": 1, "y": 1.31},
+                {"x": 2, "y": 1},
+                {"x": 3, "y": 1.28},
+                {"x": 4, "y": 1.42},
+
+                {"x": 7, "y": 1.42},
+                {"x": 8, "y": 1.28},
+                {"x": 9, "y": 1},
+                {"x": 10, "y": 1.31},
+                {"x": 11, "y": 1.93},
+
+                {"x": 0, "y": 2.93},
+                {"x": 1, "y": 2.31},
+                {"x": 2, "y": 2},
+                {"x": 3, "y": 2.28},
+                {"x": 4, "y": 2.42},
+
+                {"x": 7, "y": 2.42},
+                {"x": 8, "y": 2.28},
+                {"x": 9, "y": 2},
+                {"x": 10, "y": 2.31},
+                {"x": 11, "y": 2.93},
+
+                {"x": 3.5, "y": 3.75},
+                {"x": 4.5, "y": 4},
+
+                {"x": 6.5, "y": 4},
+                {"x": 7.5, "y": 3.75}
+            ]
+        }
+    }
+}
